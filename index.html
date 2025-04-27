@@ -1,1 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Code Playground</title>
+    <link rel="stylesheet" href="https://asna-369.github.io/html-editor/code/style.css">
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Code Playground</h1>
+            <div class="theme-toggle" id="themeToggle">
+                <i class="fas fa-moon"></i>
+            </div>
+        </header>
 
+        <div class="editor-container">
+            <div class="editor-header">
+                <i class="fas fa-code"></i>
+                <span>HTML/CSS/JS Editor</span>
+            </div>
+            <textarea id="codeInput" placeholder="<!DOCTYPE html>
+<html>
+<head>
+    <title>My Page</title>
+    <style>
+        /* Your CSS here */
+    </style>
+</head>
+<body>
+    <!-- Your HTML here -->
+    <script>
+        // Your JavaScript here
+    </script>
+</body>
+</html>"></textarea>
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="runCode()">
+                <i class="fas fa-play"></i> Execute Code
+            </button>
+            <button class="btn btn-secondary" onclick="clearCode()">
+                <i class="fas fa-trash-alt"></i> Clear Editor
+            </button>
+        </div>
+
+        <footer>
+            <p>Write complete HTML documents with CSS and JavaScript</p>
+        </footer>
+    </div>
+
+    <script src="https://asna-369.github.io/html-editor/code/script.js"></script>
+</body>
+</html>
